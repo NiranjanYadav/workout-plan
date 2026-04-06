@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weekly Workout Plan - Push/Pull 4-Day Split</title>
+    <title>Weekly Workout Plan - Push/Pull 4-Day + Badminton</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
@@ -11,14 +11,10 @@
             --chest-color: #e74c3c;
             --back-color: #2980b9;
             --legs-color: #27ae60;
-            --triceps-color: #e67e22;
             --back2-color: #3498db;
-            --core-color: #8e44ad;
             --rest-color: #95a5a6;
-            --push-color: #e74c3c;
-            --pull-color: #2980b9;
-            --pushb-color: #e67e22;
-            --pullb-color: #3498db;
+            --core-color: #8e44ad;
+            --badminton-color: #f39c12;
             --bg: #f8f9fa;
             --card-bg: #ffffff;
             --text: #2c3e50;
@@ -135,6 +131,17 @@
         .log-table tr:hover { background: #f8f9fa; }
         .log-table .exercise-col { font-weight: 600; }
 
+        /* INFO BOX (badminton days) */
+        .info-box {
+            background: var(--card-bg);
+            border-radius: 14px;
+            padding: 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            margin-bottom: 20px;
+        }
+        .info-box ul { padding-left: 20px; }
+        .info-box li { margin-bottom: 8px; font-size: 0.95em; color: #555; }
+
         /* NOTES */
         .notes-section {
             background: var(--card-bg); border-radius: 14px; padding: 24px;
@@ -183,52 +190,52 @@
     <div class="container">
         <div class="header">
             <h1>WEEKLY WORKOUT PLAN</h1>
-            <p>Push / Pull &mdash; 4-Day Split &mdash; Each muscle group trained twice per week</p>
+            <p>Push/Pull 4-Day Split + Badminton &mdash; Fight Club Cut</p>
         </div>
 
         <!-- WEEKLY OVERVIEW -->
         <div class="week-overview">
-            <div class="day-box" style="border-top-color: var(--push-color);">
+            <div class="day-box" style="border-top-color: var(--chest-color);">
                 <div class="day-name">Mon</div>
-                <div class="day-workout" style="color: var(--push-color);">Push A</div>
+                <div class="day-workout" style="color: var(--chest-color);">Push A</div>
                 <div class="day-count">5 exercises</div>
             </div>
-            <div class="day-box" style="border-top-color: var(--pull-color);">
+            <div class="day-box" style="border-top-color: var(--back-color);">
                 <div class="day-name">Tue</div>
-                <div class="day-workout" style="color: var(--pull-color);">Pull A</div>
-                <div class="day-count">4 exercises</div>
+                <div class="day-workout" style="color: var(--back-color);">Pull A</div>
+                <div class="day-count">5 exercises</div>
             </div>
-            <div class="day-box">
+            <div class="day-box" style="border-top-color: var(--legs-color);">
                 <div class="day-name">Wed</div>
-                <div class="day-workout" style="color: var(--rest-color);">Rest</div>
-                <div class="day-count">Recovery</div>
+                <div class="day-workout" style="color: var(--legs-color);">Push B</div>
+                <div class="day-count">7 exercises</div>
             </div>
-            <div class="day-box" style="border-top-color: var(--pushb-color);">
+            <div class="day-box" style="border-top-color: var(--back2-color);">
                 <div class="day-name">Thu</div>
-                <div class="day-workout" style="color: var(--pushb-color);">Push B</div>
+                <div class="day-workout" style="color: var(--back2-color);">Pull B</div>
                 <div class="day-count">5 exercises</div>
             </div>
             <div class="day-box">
                 <div class="day-name">Fri</div>
-                <div class="day-workout" style="color: var(--rest-color);">Rest</div>
+                <div class="day-workout" style="color: var(--rest-color);">REST</div>
                 <div class="day-count">Recovery</div>
             </div>
-            <div class="day-box" style="border-top-color: var(--pullb-color);">
+            <div class="day-box" style="border-top-color: var(--badminton-color);">
                 <div class="day-name">Sat</div>
-                <div class="day-workout" style="color: var(--pullb-color);">Pull B</div>
-                <div class="day-count">5 exercises</div>
+                <div class="day-workout" style="color: var(--badminton-color);">Badminton</div>
+                <div class="day-count">60-90 min</div>
             </div>
-            <div class="day-box">
+            <div class="day-box" style="border-top-color: var(--badminton-color);">
                 <div class="day-name">Sun</div>
-                <div class="day-workout" style="color: var(--rest-color);">Rest</div>
-                <div class="day-count">Recovery</div>
+                <div class="day-workout" style="color: var(--badminton-color);">Badminton / REST</div>
+                <div class="day-count">Play or recover</div>
             </div>
         </div>
 
         <!-- ====================== DAY 1: MONDAY - PUSH A ====================== -->
         <div class="section-header" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
-            <h2>MONDAY &mdash; Push A &mdash; Chest, Shoulders &amp; Triceps</h2>
-            <p>5 exercises &bull; ~45-50 min &bull; Focus: Chest &amp; Pressing strength</p>
+            <h2>MONDAY &mdash; Push A (Chest, Shoulders, Triceps)</h2>
+            <p>5 exercises &bull; ~45-50 min</p>
         </div>
 
         <div class="exercises-grid">
@@ -238,7 +245,7 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bench_Press/1.jpg" alt="DB Bench end" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--push-color);">1</div>
+                    <div class="exercise-number" style="background: var(--chest-color);">1</div>
                     <div class="exercise-name">Dumbbell Flat Bench Press</div>
                     <div class="exercise-target">Chest (mid) &bull; Triceps &bull; Shoulders</div>
                     <div class="exercise-sets">
@@ -254,7 +261,7 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Dumbbell_Press/1.jpg" alt="Incline Press end" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--push-color);">2</div>
+                    <div class="exercise-number" style="background: var(--chest-color);">2</div>
                     <div class="exercise-name">Incline Dumbbell Press</div>
                     <div class="exercise-target">Upper Chest &bull; Shoulders &bull; Triceps</div>
                     <div class="exercise-sets">
@@ -270,7 +277,7 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Flyes/1.jpg" alt="Chest Fly end" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--push-color);">3</div>
+                    <div class="exercise-number" style="background: var(--chest-color);">3</div>
                     <div class="exercise-name">Chest Fly (Dumbbell/Machine)</div>
                     <div class="exercise-target">Chest &bull; Shoulders (front)</div>
                     <div class="exercise-sets">
@@ -286,7 +293,7 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Shoulder_Press/1.jpg" alt="Shoulder Press end" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--push-color);">4</div>
+                    <div class="exercise-number" style="background: var(--chest-color);">4</div>
                     <div class="exercise-name">Shoulder Press</div>
                     <div class="exercise-target">Shoulders (all heads) &bull; Triceps</div>
                     <div class="exercise-sets">
@@ -302,7 +309,7 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Dumbbell_Raise/0.jpg" alt="Front Raise" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--push-color);">5</div>
+                    <div class="exercise-number" style="background: var(--chest-color);">5</div>
                     <div class="exercise-name">Lateral &amp; Front Raises</div>
                     <div class="exercise-target">Side Delts &bull; Front Delts</div>
                     <div class="exercise-sets">
@@ -315,7 +322,7 @@
         </div>
 
         <div class="log-section">
-            <h3>Workout Log &mdash; Monday (Push A)</h3>
+            <h3>Workout Log &mdash; Monday</h3>
             <table class="log-table">
                 <thead><tr><th>#</th><th>Exercise</th><th>Set 1</th><th>Set 2</th><th>Set 3</th><th>Set 4</th><th>Notes</th></tr></thead>
                 <tbody>
@@ -330,8 +337,8 @@
 
         <!-- ====================== DAY 2: TUESDAY - PULL A ====================== -->
         <div class="section-header" style="background: linear-gradient(135deg, #2980b9, #2471a3);">
-            <h2>TUESDAY &mdash; Pull A &mdash; Back &amp; Biceps</h2>
-            <p>4 exercises &bull; ~40-50 min &bull; Focus: Heavy back &amp; pulling strength</p>
+            <h2>TUESDAY &mdash; Pull A (Back, Biceps, Core)</h2>
+            <p>5 exercises &bull; ~45-50 min</p>
         </div>
 
         <div class="exercises-grid">
@@ -341,7 +348,7 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Deadlift/1.jpg" alt="Deadlift end" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--pull-color);">1</div>
+                    <div class="exercise-number" style="background: var(--back-color);">1</div>
                     <div class="exercise-name">Deadlift</div>
                     <div class="exercise-target">Back (entire) &bull; Glutes &bull; Hamstrings</div>
                     <div class="exercise-sets">
@@ -357,7 +364,7 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Barbell_Row/1.jpg" alt="Barbell Row end" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--pull-color);">2</div>
+                    <div class="exercise-number" style="background: var(--back-color);">2</div>
                     <div class="exercise-name">Barbell Rows</div>
                     <div class="exercise-target">Lats &bull; Rhomboids &bull; Traps &bull; Biceps</div>
                     <div class="exercise-sets">
@@ -373,7 +380,7 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hammer_Curls/0.jpg" alt="Hammer Curl" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--pull-color);">3</div>
+                    <div class="exercise-number" style="background: var(--back-color);">3</div>
                     <div class="exercise-name">EZ Bar Curls + Hammer Curls</div>
                     <div class="exercise-target">Biceps &bull; Brachialis &bull; Forearms</div>
                     <div class="exercise-sets">
@@ -389,7 +396,7 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Dumbbell_Curl/1.jpg" alt="Incline Curl end" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--pull-color);">4</div>
+                    <div class="exercise-number" style="background: var(--back-color);">4</div>
                     <div class="exercise-name">Incline Curls</div>
                     <div class="exercise-target">Biceps (long head stretch)</div>
                     <div class="exercise-sets">
@@ -399,10 +406,31 @@
                     </div>
                 </div>
             </div>
+            <div class="exercise-card">
+                <div class="exercise-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Flat_Bench_Lying_Leg_Raise/0.jpg" alt="Leg Raise" loading="lazy">
+                    <div style="width: 50%; background: linear-gradient(135deg, #e8daef, #d2b4de); display: flex; align-items: center; justify-content: center;">
+                        <div style="text-align: center; padding: 10px;">
+                            <div style="font-size: 3em; line-height: 1;">&#129494;</div>
+                            <div style="font-size: 0.75em; color: #555; margin-top: 6px; font-weight: 500;">Plank Hold</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exercise-info">
+                    <div class="exercise-number" style="background: var(--back-color);">5</div>
+                    <div class="exercise-name">Hanging Leg Raises + Planks</div>
+                    <div class="exercise-target">Lower Abs &bull; Core</div>
+                    <div class="exercise-sets">
+                        <div class="set-info"><div class="label">Sets</div><div class="value">3+3</div></div>
+                        <div class="set-info"><div class="label">Reps</div><div class="value">12-15 + 45s</div></div>
+                        <div class="set-info"><div class="label">Rest</div><div class="value">45s</div></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="log-section">
-            <h3>Workout Log &mdash; Tuesday (Pull A)</h3>
+            <h3>Workout Log &mdash; Tuesday</h3>
             <table class="log-table">
                 <thead><tr><th>#</th><th>Exercise</th><th>Set 1</th><th>Set 2</th><th>Set 3</th><th>Set 4</th><th>Notes</th></tr></thead>
                 <tbody>
@@ -410,20 +438,15 @@
                     <tr><td>2</td><td class="exercise-col">Barbell Rows</td><td>__kg x __</td><td>__kg x __</td><td>__kg x __</td><td>__kg x __</td><td></td></tr>
                     <tr><td>3</td><td class="exercise-col">EZ Curls + Hammer Curls</td><td>__kg x __</td><td>__kg x __</td><td>__kg x __</td><td></td><td></td></tr>
                     <tr><td>4</td><td class="exercise-col">Incline Curls</td><td>__kg x __</td><td>__kg x __</td><td>__kg x __</td><td></td><td></td></tr>
+                    <tr><td>5</td><td class="exercise-col">Leg Raises + Planks</td><td>BW x __ / __s</td><td>BW x __ / __s</td><td>BW x __ / __s</td><td></td><td></td></tr>
                 </tbody>
             </table>
         </div>
 
-        <!-- ====================== WEDNESDAY - REST ====================== -->
-        <div class="section-header" style="background: linear-gradient(135deg, #95a5a6, #7f8c8d);">
-            <h2>WEDNESDAY &mdash; Rest Day</h2>
-            <p>Active recovery &bull; Light walking, stretching, or foam rolling &bull; Let the muscles rebuild</p>
-        </div>
-
-        <!-- ====================== DAY 3: THURSDAY - PUSH B ====================== -->
-        <div class="section-header" style="background: linear-gradient(135deg, #e67e22, #d35400);">
-            <h2>THURSDAY &mdash; Push B &mdash; Legs (Push) &amp; Triceps</h2>
-            <p>5 exercises &bull; ~45-55 min &bull; Focus: Quads, Glutes &amp; Triceps</p>
+        <!-- ====================== DAY 3: WEDNESDAY - PUSH B ====================== -->
+        <div class="section-header" style="background: linear-gradient(135deg, #27ae60, #229954);">
+            <h2>WEDNESDAY &mdash; Push B (Legs, Shoulders, Triceps, Core)</h2>
+            <p>7 exercises &bull; ~50-60 min</p>
         </div>
 
         <div class="exercises-grid">
@@ -433,7 +456,7 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Squat/1.jpg" alt="Squat end" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--pushb-color);">1</div>
+                    <div class="exercise-number" style="background: var(--legs-color);">1</div>
                     <div class="exercise-name">Weighted Squats</div>
                     <div class="exercise-target">Quads &bull; Glutes &bull; Hamstrings &bull; Core</div>
                     <div class="exercise-sets">
@@ -449,7 +472,7 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Lunges/1.jpg" alt="Lunge end" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--pushb-color);">2</div>
+                    <div class="exercise-number" style="background: var(--legs-color);">2</div>
                     <div class="exercise-name">Lunges</div>
                     <div class="exercise-target">Quads &bull; Glutes &bull; Hamstrings</div>
                     <div class="exercise-sets">
@@ -465,7 +488,7 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/0.jpg" alt="Face Pull" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--pushb-color);">3</div>
+                    <div class="exercise-number" style="background: var(--legs-color);">3</div>
                     <div class="exercise-name">Upright Rows + Face Pull</div>
                     <div class="exercise-target">Traps &bull; Rear Delts &bull; Rotator Cuff</div>
                     <div class="exercise-sets">
@@ -477,11 +500,27 @@
             </div>
             <div class="exercise-card">
                 <div class="exercise-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/0.jpg" alt="Lateral Raise start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/0.jpg" alt="Lateral Raise end" loading="lazy">
+                </div>
+                <div class="exercise-info">
+                    <div class="exercise-number" style="background: var(--legs-color);">4</div>
+                    <div class="exercise-name">Lateral Raises</div>
+                    <div class="exercise-target">Side Delts (V-taper)</div>
+                    <div class="exercise-sets">
+                        <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div>
+                        <div class="set-info"><div class="label">Reps</div><div class="value">12-15</div></div>
+                        <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="exercise-card">
+                <div class="exercise-img-container">
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Dumbbell_Triceps_Extension/0.jpg" alt="Triceps Extension start" loading="lazy">
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Dumbbell_Triceps_Extension/1.jpg" alt="Triceps Extension end" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--pushb-color);">4</div>
+                    <div class="exercise-number" style="background: var(--legs-color);">5</div>
                     <div class="exercise-name">Dumbbell Triceps Extension</div>
                     <div class="exercise-target">Triceps (long head)</div>
                     <div class="exercise-sets">
@@ -497,7 +536,7 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Dips/1.jpg" alt="Back Dips end" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--pushb-color);">5</div>
+                    <div class="exercise-number" style="background: var(--legs-color);">6</div>
                     <div class="exercise-name">Back Dips (Bench Dips)</div>
                     <div class="exercise-target">Triceps &bull; Chest &bull; Shoulders</div>
                     <div class="exercise-sets">
@@ -507,32 +546,46 @@
                     </div>
                 </div>
             </div>
+            <div class="exercise-card">
+                <div class="exercise-img-container" style="background: linear-gradient(135deg, #d5f5e3, #abebc6); display: flex; align-items: center; justify-content: center;">
+                    <div style="text-align: center; padding: 20px;">
+                        <div style="font-size: 4em; line-height: 1;">&#129494;</div>
+                        <div style="font-size: 0.85em; color: #555; margin-top: 8px; font-weight: 500;">Cable Crunches + Plank Hold<br>Squeeze at the bottom</div>
+                    </div>
+                </div>
+                <div class="exercise-info">
+                    <div class="exercise-number" style="background: var(--legs-color);">7</div>
+                    <div class="exercise-name">Cable Crunches + Plank</div>
+                    <div class="exercise-target">Upper Abs &bull; Core</div>
+                    <div class="exercise-sets">
+                        <div class="set-info"><div class="label">Sets</div><div class="value">3+3</div></div>
+                        <div class="set-info"><div class="label">Reps</div><div class="value">15 + 45s</div></div>
+                        <div class="set-info"><div class="label">Rest</div><div class="value">45s</div></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="log-section">
-            <h3>Workout Log &mdash; Thursday (Push B)</h3>
+            <h3>Workout Log &mdash; Wednesday</h3>
             <table class="log-table">
                 <thead><tr><th>#</th><th>Exercise</th><th>Set 1</th><th>Set 2</th><th>Set 3</th><th>Set 4</th><th>Notes</th></tr></thead>
                 <tbody>
                     <tr><td>1</td><td class="exercise-col">Weighted Squats</td><td>__kg x __</td><td>__kg x __</td><td>__kg x __</td><td>__kg x __</td><td></td></tr>
                     <tr><td>2</td><td class="exercise-col">Lunges</td><td>__kg x __</td><td>__kg x __</td><td>__kg x __</td><td></td><td></td></tr>
                     <tr><td>3</td><td class="exercise-col">Upright Row + Face Pull</td><td>__kg x __</td><td>__kg x __</td><td>__kg x __</td><td></td><td></td></tr>
-                    <tr><td>4</td><td class="exercise-col">DB Triceps Extension</td><td>__kg x __</td><td>__kg x __</td><td>__kg x __</td><td></td><td></td></tr>
-                    <tr><td>5</td><td class="exercise-col">Back Dips</td><td>BW x __</td><td>BW x __</td><td>BW x __</td><td></td><td></td></tr>
+                    <tr><td>4</td><td class="exercise-col">Lateral Raises</td><td>__kg x __</td><td>__kg x __</td><td>__kg x __</td><td></td><td></td></tr>
+                    <tr><td>5</td><td class="exercise-col">DB Triceps Extension</td><td>__kg x __</td><td>__kg x __</td><td>__kg x __</td><td></td><td></td></tr>
+                    <tr><td>6</td><td class="exercise-col">Back Dips</td><td>BW x __</td><td>BW x __</td><td>BW x __</td><td></td><td></td></tr>
+                    <tr><td>7</td><td class="exercise-col">Cable Crunches + Plank</td><td>__kg x __ / __s</td><td>__kg x __ / __s</td><td>__kg x __ / __s</td><td></td><td></td></tr>
                 </tbody>
             </table>
         </div>
 
-        <!-- ====================== FRIDAY - REST ====================== -->
-        <div class="section-header" style="background: linear-gradient(135deg, #95a5a6, #7f8c8d);">
-            <h2>FRIDAY &mdash; Rest Day</h2>
-            <p>Active recovery &bull; Light walking, stretching, or foam rolling</p>
-        </div>
-
-        <!-- ====================== DAY 4: SATURDAY - PULL B ====================== -->
+        <!-- ====================== DAY 4: THURSDAY - PULL B ====================== -->
         <div class="section-header" style="background: linear-gradient(135deg, #3498db, #2e86c1);">
-            <h2>SATURDAY &mdash; Pull B &mdash; Back, Biceps &amp; Legs (Pull)</h2>
-            <p>5 exercises &bull; ~45-50 min &bull; Focus: Lats, Hamstrings &amp; Biceps</p>
+            <h2>THURSDAY &mdash; Pull B (Back, Biceps, Legs)</h2>
+            <p>5 exercises &bull; ~45-50 min</p>
         </div>
 
         <div class="exercises-grid">
@@ -542,7 +595,7 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Front_Lat_Pulldown/1.jpg" alt="Lat Pulldown end" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--pullb-color);">1</div>
+                    <div class="exercise-number" style="background: var(--back2-color);">1</div>
                     <div class="exercise-name">Lat Pulldown (Close Grip)</div>
                     <div class="exercise-target">Lats &bull; Biceps &bull; Mid Back</div>
                     <div class="exercise-sets">
@@ -558,7 +611,7 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/1.jpg" alt="Cable Row end" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--pullb-color);">2</div>
+                    <div class="exercise-number" style="background: var(--back2-color);">2</div>
                     <div class="exercise-name">Cable Rows</div>
                     <div class="exercise-target">Mid Back &bull; Lats &bull; Biceps</div>
                     <div class="exercise-sets">
@@ -574,7 +627,7 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lying_Leg_Curls/0.jpg" alt="Leg Curl" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--pullb-color);">3</div>
+                    <div class="exercise-number" style="background: var(--back2-color);">3</div>
                     <div class="exercise-name">Leg Extension + Leg Curls</div>
                     <div class="exercise-target">Quads &bull; Hamstrings (isolation)</div>
                     <div class="exercise-sets">
@@ -590,9 +643,9 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Calf_Raises/1.jpg" alt="Calf Raise end" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--pullb-color);">4</div>
+                    <div class="exercise-number" style="background: var(--back2-color);">4</div>
                     <div class="exercise-name">Calf Raises</div>
-                    <div class="exercise-target">Calves (gastrocnemius &amp; soleus)</div>
+                    <div class="exercise-target">Calves</div>
                     <div class="exercise-sets">
                         <div class="set-info"><div class="label">Sets</div><div class="value">4</div></div>
                         <div class="set-info"><div class="label">Reps</div><div class="value">15-20</div></div>
@@ -606,7 +659,7 @@
                     <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Barbell_Curl/1.jpg" alt="Reverse Curl end" loading="lazy">
                 </div>
                 <div class="exercise-info">
-                    <div class="exercise-number" style="background: var(--pullb-color);">5</div>
+                    <div class="exercise-number" style="background: var(--back2-color);">5</div>
                     <div class="exercise-name">Reverse Curls</div>
                     <div class="exercise-target">Brachioradialis &bull; Forearms</div>
                     <div class="exercise-sets">
@@ -619,7 +672,7 @@
         </div>
 
         <div class="log-section">
-            <h3>Workout Log &mdash; Saturday (Pull B)</h3>
+            <h3>Workout Log &mdash; Thursday</h3>
             <table class="log-table">
                 <thead><tr><th>#</th><th>Exercise</th><th>Set 1</th><th>Set 2</th><th>Set 3</th><th>Set 4</th><th>Notes</th></tr></thead>
                 <tbody>
@@ -632,20 +685,58 @@
             </table>
         </div>
 
+        <!-- ====================== FRIDAY - REST ====================== -->
+        <div class="section-header" style="background: linear-gradient(135deg, #95a5a6, #7f8c8d);">
+            <h2>FRIDAY &mdash; REST or Badminton</h2>
+            <p>Active recovery &bull; Light stretching, foam rolling, or badminton session</p>
+        </div>
+
+        <!-- ====================== SATURDAY - BADMINTON ====================== -->
+        <div class="section-header" style="background: linear-gradient(135deg, #f39c12, #e67e22);">
+            <h2>SATURDAY &mdash; Badminton</h2>
+            <p>Cardio &amp; Agility &bull; 60-90 min session</p>
+        </div>
+
+        <div class="info-box" style="border-left: 4px solid var(--badminton-color);">
+            <ul>
+                <li><strong>Badminton session:</strong> 60-90 minutes of doubles or singles play</li>
+                <li><strong>Great for:</strong> cardio, agility, footwork, HIIT-like intensity</li>
+                <li><strong>Calorie burn:</strong> 400-600 cal/session</li>
+                <li><strong>Also counts toward</strong> 10K daily steps</li>
+            </ul>
+        </div>
+
+        <!-- ====================== SUNDAY - BADMINTON OR REST ====================== -->
+        <div class="section-header" style="background: linear-gradient(135deg, #f39c12, #d68910);">
+            <h2>SUNDAY &mdash; Badminton or REST</h2>
+            <p>Play or recover based on how you feel</p>
+        </div>
+
+        <div class="info-box" style="border-left: 4px solid var(--badminton-color);">
+            <ul>
+                <li><strong>Option A:</strong> Badminton session (60-90 min) if energy and recovery allow</li>
+                <li><strong>Option B:</strong> Full rest day &mdash; light walking, stretching, foam rolling</li>
+                <li><strong>Listen to your body:</strong> If legs are sore from Thursday Pull B, rest and recover</li>
+                <li><strong>Either way:</strong> Hit your 10K steps and 140g protein</li>
+            </ul>
+        </div>
+
         <!-- NOTES -->
         <div class="notes-section">
             <h3>General Guidelines</h3>
             <ul>
-                <li><strong>Why Push/Pull?</strong> Each muscle group is trained twice per week (Mon + Thu for push muscles, Tue + Sat for pull muscles) — optimal frequency for muscle growth.</li>
                 <li><strong>Warm up</strong> 5-10 minutes before each session (light cardio + dynamic stretches).</li>
                 <li><strong>Progressive overload:</strong> Increase weight by 2-5% when you complete all sets at the top of the rep range.</li>
                 <li><strong>Rest between sets:</strong> Compound lifts (squat, deadlift, bench) = 90s-3min. Isolation = 45-60s.</li>
                 <li><strong>Tempo:</strong> 2 seconds down, 1 second pause, 1 second up (controlled movements).</li>
                 <li><strong>Breathing:</strong> Exhale on exertion (the hard part), inhale on the eccentric (lowering).</li>
                 <li><strong>Hydration:</strong> Drink 500ml-1L water per session.</li>
-                <li><strong>Rest days (Wed, Fri, Sun)</strong> are full rest. Light walking, stretching, or foam rolling only.</li>
+                <li><strong>Friday</strong> is a rest or light badminton day. Stretching and foam rolling recommended.</li>
                 <li><strong>Track your weights</strong> in the log tables to monitor progress week over week.</li>
-                <li><strong>Badminton (weekends):</strong> Can replace Saturday session or be done on a rest day — counts as active recovery.</li>
+                <li><strong>Core work</strong> is built into Tuesday and Wednesday &mdash; no separate core day needed.</li>
+                <li><strong>Badminton on weekends</strong> provides cardio &mdash; no treadmill needed.</li>
+                <li><strong>10K steps daily</strong> &mdash; non-negotiable, rain or shine.</li>
+                <li><strong>Target:</strong> 140g protein daily, 1,800-2,000 calories for cut.</li>
             </ul>
         </div>
 
@@ -653,15 +744,15 @@
         <div class="notes-section">
             <h3>Weekly Schedule Summary</h3>
             <table class="log-table">
-                <thead><tr><th>Day</th><th>Workout</th><th>Muscles</th><th>Exercises</th><th>Duration</th></tr></thead>
+                <thead><tr><th>Day</th><th>Workout</th><th>Exercises</th><th>Duration</th></tr></thead>
                 <tbody>
-                    <tr><td><strong>Monday</strong></td><td style="color: var(--push-color); font-weight:600;">Push A</td><td>Chest, Shoulders, Triceps</td><td>5 exercises</td><td>~45-50 min</td></tr>
-                    <tr><td><strong>Tuesday</strong></td><td style="color: var(--pull-color); font-weight:600;">Pull A</td><td>Back, Biceps</td><td>4 exercises</td><td>~40-50 min</td></tr>
-                    <tr><td><strong>Wednesday</strong></td><td style="color: var(--rest-color); font-weight:600;">REST</td><td>Recovery</td><td>&mdash;</td><td>&mdash;</td></tr>
-                    <tr><td><strong>Thursday</strong></td><td style="color: var(--pushb-color); font-weight:600;">Push B</td><td>Legs (Quads/Glutes), Triceps</td><td>5 exercises</td><td>~45-55 min</td></tr>
-                    <tr><td><strong>Friday</strong></td><td style="color: var(--rest-color); font-weight:600;">REST</td><td>Recovery</td><td>&mdash;</td><td>&mdash;</td></tr>
-                    <tr><td><strong>Saturday</strong></td><td style="color: var(--pullb-color); font-weight:600;">Pull B</td><td>Back, Biceps, Legs (Hamstrings/Calves)</td><td>5 exercises</td><td>~45-50 min</td></tr>
-                    <tr><td><strong>Sunday</strong></td><td style="color: var(--rest-color); font-weight:600;">REST</td><td>Recovery</td><td>&mdash;</td><td>&mdash;</td></tr>
+                    <tr><td><strong>Monday</strong></td><td style="color: var(--chest-color); font-weight:600;">Push A &mdash; Chest, Shoulders, Triceps</td><td>5 exercises</td><td>~45-50 min</td></tr>
+                    <tr><td><strong>Tuesday</strong></td><td style="color: var(--back-color); font-weight:600;">Pull A &mdash; Back, Biceps, Core</td><td>5 exercises</td><td>~45-50 min</td></tr>
+                    <tr><td><strong>Wednesday</strong></td><td style="color: var(--legs-color); font-weight:600;">Push B &mdash; Legs, Shoulders, Triceps, Core</td><td>7 exercises</td><td>~50-60 min</td></tr>
+                    <tr><td><strong>Thursday</strong></td><td style="color: var(--back2-color); font-weight:600;">Pull B &mdash; Back, Biceps, Legs</td><td>5 exercises</td><td>~45-50 min</td></tr>
+                    <tr><td><strong>Friday</strong></td><td style="color: var(--rest-color); font-weight:600;">REST or Badminton</td><td>&mdash;</td><td>&mdash;</td></tr>
+                    <tr><td><strong>Saturday</strong></td><td style="color: var(--badminton-color); font-weight:600;">Badminton</td><td>&mdash;</td><td>~60-90 min</td></tr>
+                    <tr><td><strong>Sunday</strong></td><td style="color: var(--badminton-color); font-weight:600;">Badminton or REST</td><td>&mdash;</td><td>~60-90 min</td></tr>
                 </tbody>
             </table>
         </div>
