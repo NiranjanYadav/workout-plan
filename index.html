@@ -219,11 +219,17 @@
         .v2-exercise-card {
             background: var(--card-bg);
             border-radius: 14px;
-            padding: 18px;
             box-shadow: 0 2px 12px rgba(0,0,0,0.07);
             display: flex; flex-direction: column;
+            overflow: hidden;
             border-left: 4px solid #11998e;
         }
+        .v2-exercise-card .v2-img-container {
+            display: flex; gap: 0; height: 180px;
+            background: #f0f0f0; overflow: hidden;
+        }
+        .v2-exercise-card .v2-img-container img { width: 50%; height: 100%; object-fit: cover; }
+        .v2-exercise-card .v2-info { padding: 18px; display: flex; flex-direction: column; flex: 1; }
         .v2-exercise-card .exercise-number {
             display: inline-flex; align-items: center; justify-content: center;
             width: 28px; height: 28px; border-radius: 50%;
@@ -902,11 +908,16 @@
 
         <div class="v2-grid">
             <div class="v2-exercise-card">
-                <div class="exercise-number" style="background: var(--chest-color);">1</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/0.jpg" alt="Barbell Bench Press start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/1.jpg" alt="Barbell Bench Press end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--chest-color);">1</div>
                 <div class="exercise-name">Barbell Bench Press</div>
                 <div class="exercise-target">Chest (mid) &bull; Triceps &bull; Front Delts</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">4</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">4</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">6-8</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">2-3 min</div></div>
                 </div>
@@ -915,11 +926,16 @@
             </div>
 
             <div class="v2-exercise-card">
-                <div class="exercise-number" style="background: var(--chest-color);">2</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Dumbbell_Flyes/0.jpg" alt="Incline Chest Fly (Dumbbell) start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Dumbbell_Flyes/1.jpg" alt="Incline Chest Fly (Dumbbell) end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--chest-color);">2</div>
                 <div class="exercise-name">Incline Chest Fly (Dumbbell)</div>
                 <div class="exercise-target">Upper Chest &bull; Front Delts</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">12-15</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
@@ -928,11 +944,16 @@
             </div>
 
             <div class="v2-exercise-card">
-                <div class="exercise-number" style="background: var(--chest-color);">3</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Shoulder_Press/0.jpg" alt="Barbell Shoulder Press start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Shoulder_Press/1.jpg" alt="Barbell Shoulder Press end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--chest-color);">3</div>
                 <div class="exercise-name">Barbell Shoulder Press</div>
                 <div class="exercise-target">Shoulders (all heads) &bull; Triceps</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">4</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">4</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">8-10</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">90s</div></div>
                 </div>
@@ -941,11 +962,16 @@
             </div>
 
             <div class="v2-exercise-card">
-                <div class="exercise-number" style="background: var(--chest-color);">4</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/0.jpg" alt="Lateral + Front Raises start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/1.jpg" alt="Lateral + Front Raises end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--chest-color);">4</div>
                 <div class="exercise-name">Lateral + Front Raises</div>
                 <div class="exercise-target">Side Delts &bull; Front Delts</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3+3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3+3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">12-15</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
@@ -954,11 +980,16 @@
             </div>
 
             <div class="v2-exercise-card">
-                <div class="exercise-number" style="background: var(--chest-color);">5</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Triceps_Press/0.jpg" alt="Dumbbell Triceps Extension start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Triceps_Press/1.jpg" alt="Dumbbell Triceps Extension end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--chest-color);">5</div>
                 <div class="exercise-name">Dumbbell Triceps Extension</div>
                 <div class="exercise-target">Triceps (long head)</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">10-12</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
@@ -967,11 +998,16 @@
             </div>
 
             <div class="v2-exercise-card">
-                <div class="exercise-number" style="background: var(--chest-color);">6</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dips_-_Triceps_Version/0.jpg" alt="Back Dips start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dips_-_Triceps_Version/1.jpg" alt="Back Dips end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--chest-color);">6</div>
                 <div class="exercise-name">Back Dips</div>
                 <div class="exercise-target">Triceps &bull; Lower Chest</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">Max</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
@@ -988,11 +1024,16 @@
 
         <div class="v2-grid">
             <div class="v2-exercise-card" style="border-left-color: var(--back-color);">
-                <div class="exercise-number" style="background: var(--back-color);">1</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg" alt="Romanian Deadlift (RDL) start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/1.jpg" alt="Romanian Deadlift (RDL) end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--back-color);">1</div>
                 <div class="exercise-name">Romanian Deadlift (RDL)</div>
                 <div class="exercise-target">Hamstrings &bull; Glutes &bull; Lower Back</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">4</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">4</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">8-10</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">2 min</div></div>
                 </div>
@@ -1001,11 +1042,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--back-color);">
-                <div class="exercise-number" style="background: var(--back-color);">2</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Barbell_Row/0.jpg" alt="Barbell Rows start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Barbell_Row/1.jpg" alt="Barbell Rows end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--back-color);">2</div>
                 <div class="exercise-name">Barbell Rows</div>
                 <div class="exercise-target">Lats &bull; Mid-back &bull; Rear Delts</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">4</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">4</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">8-10</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">90s</div></div>
                 </div>
@@ -1014,11 +1060,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--back-color);">
-                <div class="exercise-number" style="background: var(--back-color);">3</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Lat_Pulldown/0.jpg" alt="Lat Pulldown (Wide Grip) start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Lat_Pulldown/1.jpg" alt="Lat Pulldown (Wide Grip) end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--back-color);">3</div>
                 <div class="exercise-name">Lat Pulldown (Wide Grip)</div>
                 <div class="exercise-target">Lats (width) &bull; Biceps</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">10-12</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
@@ -1027,11 +1078,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--back-color);">
-                <div class="exercise-number" style="background: var(--back-color);">4</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/0.jpg" alt="Cable Rows start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/1.jpg" alt="Cable Rows end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--back-color);">4</div>
                 <div class="exercise-name">Cable Rows</div>
                 <div class="exercise-target">Mid-back &bull; Rear Delts &bull; Biceps</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">10-12</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
@@ -1040,11 +1096,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--back-color);">
-                <div class="exercise-number" style="background: var(--back-color);">5</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/0.jpg" alt="Face Pulls + Shrugs start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/1.jpg" alt="Face Pulls + Shrugs end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--back-color);">5</div>
                 <div class="exercise-name">Face Pulls + Shrugs</div>
                 <div class="exercise-target">Rear Delts &bull; Upper Traps &bull; Rotator Cuff</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3+3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3+3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">12-15</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
@@ -1053,11 +1114,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--back-color);">
-                <div class="exercise-number" style="background: var(--back-color);">6</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Spider_Curl/0.jpg" alt="Spider Curls + Hammer Curls start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Spider_Curl/1.jpg" alt="Spider Curls + Hammer Curls end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--back-color);">6</div>
                 <div class="exercise-name">Spider Curls + Hammer Curls</div>
                 <div class="exercise-target">Biceps (short head) &bull; Brachialis</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3+3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3+3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">10-12</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
@@ -1066,11 +1132,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--back-color);">
-                <div class="exercise-number" style="background: var(--back-color);">7</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl/0.jpg" alt="Bicep 21s start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl/1.jpg" alt="Bicep 21s end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--back-color);">7</div>
                 <div class="exercise-name">Bicep 21s</div>
                 <div class="exercise-target">Biceps (full range hypertrophy)</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">21 (7+7+7)</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">90s</div></div>
                 </div>
@@ -1087,11 +1158,16 @@
 
         <div class="v2-grid">
             <div class="v2-exercise-card" style="border-left-color: var(--legs-color);">
-                <div class="exercise-number" style="background: var(--legs-color);">1</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Squat/0.jpg" alt="Weighted Barbell Squats start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Squat/1.jpg" alt="Weighted Barbell Squats end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--legs-color);">1</div>
                 <div class="exercise-name">Weighted Barbell Squats</div>
                 <div class="exercise-target">Quads &bull; Glutes &bull; Hams &bull; Core</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">4</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">4</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">6-8</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">2-3 min</div></div>
                 </div>
@@ -1100,11 +1176,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--legs-color);">
-                <div class="exercise-number" style="background: var(--legs-color);">2</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Walking_Lunge/0.jpg" alt="Walking Lunges start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Walking_Lunge/1.jpg" alt="Walking Lunges end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--legs-color);">2</div>
                 <div class="exercise-name">Walking Lunges</div>
                 <div class="exercise-target">Quads &bull; Glutes &bull; Balance</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">12/leg</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
@@ -1113,11 +1194,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--legs-color);">
-                <div class="exercise-number" style="background: var(--legs-color);">3</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/0.jpg" alt="Leg Extension start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/1.jpg" alt="Leg Extension end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--legs-color);">3</div>
                 <div class="exercise-name">Leg Extension</div>
                 <div class="exercise-target">Quads (isolation)</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">12-15</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
@@ -1126,11 +1212,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--legs-color);">
-                <div class="exercise-number" style="background: var(--legs-color);">4</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lying_Leg_Curls/0.jpg" alt="Leg Curls start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lying_Leg_Curls/1.jpg" alt="Leg Curls end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--legs-color);">4</div>
                 <div class="exercise-name">Leg Curls</div>
                 <div class="exercise-target">Hamstrings (isolation)</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">12-15</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
@@ -1139,11 +1230,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--legs-color);">
-                <div class="exercise-number" style="background: var(--legs-color);">5</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Step-up_with_Knee_Raise/0.jpg" alt="Dumbbell Step-Ups start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Step-up_with_Knee_Raise/1.jpg" alt="Dumbbell Step-Ups end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--legs-color);">5</div>
                 <div class="exercise-name">Dumbbell Step-Ups</div>
                 <div class="exercise-target">Quads &bull; Glutes &bull; Unilateral</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">10/leg</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
@@ -1152,11 +1248,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--legs-color);">
-                <div class="exercise-number" style="background: var(--legs-color);">6</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Arm_Kettlebell_Swings/0.jpg" alt="Sumo Squats OR KB Swings start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Arm_Kettlebell_Swings/1.jpg" alt="Sumo Squats OR KB Swings end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--legs-color);">6</div>
                 <div class="exercise-name">Sumo Squats OR KB Swings</div>
                 <div class="exercise-target">Glutes &bull; Inner Thighs &bull; Posterior</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">12-15</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
@@ -1165,11 +1266,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--legs-color);">
-                <div class="exercise-number" style="background: var(--legs-color);">7</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Calf_Raises/0.jpg" alt="Calf Raises start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Calf_Raises/1.jpg" alt="Calf Raises end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--legs-color);">7</div>
                 <div class="exercise-name">Calf Raises</div>
                 <div class="exercise-target">Calves (gastrocnemius)</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">4</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">4</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">15-20</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">45s</div></div>
                 </div>
@@ -1178,11 +1284,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--core-color);">
-                <div class="exercise-number" style="background: var(--core-color);">8</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Leg_Raise/0.jpg" alt="Hanging Leg Raises + Reverse Crunches start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Leg_Raise/1.jpg" alt="Hanging Leg Raises + Reverse Crunches end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--core-color);">8</div>
                 <div class="exercise-name">Hanging Leg Raises + Reverse Crunches</div>
                 <div class="exercise-target">Lower Abs &bull; Hip Flexors</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3+3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3+3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">12+15</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
@@ -1191,11 +1302,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--core-color);">
-                <div class="exercise-number" style="background: var(--core-color);">9</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg" alt="Plank start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg" alt="Plank end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--core-color);">9</div>
                 <div class="exercise-name">Plank</div>
                 <div class="exercise-target">Core (all) &bull; Shoulders</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">45s hold</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">30s</div></div>
                 </div>
@@ -1212,11 +1328,16 @@
 
         <div class="v2-grid">
             <div class="v2-exercise-card" style="border-left-color: var(--back2-color);">
-                <div class="exercise-number" style="background: var(--back2-color);">1</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Dumbbell_Bench_Press/0.jpg" alt="Decline Dumbbell Press start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Dumbbell_Bench_Press/1.jpg" alt="Decline Dumbbell Press end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--back2-color);">1</div>
                 <div class="exercise-name">Decline Dumbbell Press</div>
                 <div class="exercise-target">Lower Chest &bull; Triceps</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">4</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">4</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">10-12</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">90s</div></div>
                 </div>
@@ -1225,11 +1346,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--back2-color);">
-                <div class="exercise-number" style="background: var(--back2-color);">2</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Front_Lat_Pulldown/0.jpg" alt="Lat Pulldown (Close Grip) start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Front_Lat_Pulldown/1.jpg" alt="Lat Pulldown (Close Grip) end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--back2-color);">2</div>
                 <div class="exercise-name">Lat Pulldown (Close Grip)</div>
                 <div class="exercise-target">Lats (thickness) &bull; Biceps</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">4</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">4</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">10-12</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
@@ -1238,11 +1364,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--back2-color);">
-                <div class="exercise-number" style="background: var(--back2-color);">3</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Arm_Dumbbell_Row/0.jpg" alt="Single-Arm DB Row start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Arm_Dumbbell_Row/1.jpg" alt="Single-Arm DB Row end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--back2-color);">3</div>
                 <div class="exercise-name">Single-Arm DB Row</div>
                 <div class="exercise-target">Lats &bull; Mid-back &bull; Rear Delts</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">10-12/arm</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
@@ -1251,11 +1382,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--back2-color);">
-                <div class="exercise-number" style="background: var(--back2-color);">4</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Dumbbell_Raise/0.jpg" alt="Front + Lateral Raises start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Dumbbell_Raise/1.jpg" alt="Front + Lateral Raises end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--back2-color);">4</div>
                 <div class="exercise-name">Front + Lateral Raises</div>
                 <div class="exercise-target">Front + Side Delts</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3+3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3+3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">12-15</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
@@ -1264,11 +1400,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--back2-color);">
-                <div class="exercise-number" style="background: var(--back2-color);">5</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Barbell_Curl/0.jpg" alt="Reverse Curls + Wrist Curls start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Barbell_Curl/1.jpg" alt="Reverse Curls + Wrist Curls end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--back2-color);">5</div>
                 <div class="exercise-name">Reverse Curls + Wrist Curls</div>
                 <div class="exercise-target">Forearms &bull; Brachialis</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3+3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3+3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">12-15 / 20</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">45s</div></div>
                 </div>
@@ -1277,11 +1418,16 @@
             </div>
 
             <div class="v2-exercise-card" style="border-left-color: var(--back2-color);">
-                <div class="exercise-number" style="background: var(--back2-color);">6</div>
+                <div class="v2-img-container">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown/0.jpg" alt="Tricep Pushdown start" loading="lazy">
+                    <img src="https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown/1.jpg" alt="Tricep Pushdown end" loading="lazy">
+                </div>
+                <div class="v2-info">
+                    <div class="exercise-number" style="background: var(--back2-color);">6</div>
                 <div class="exercise-name">Tricep Pushdown</div>
                 <div class="exercise-target">Triceps (all heads)</div>
                 <div class="exercise-sets">
-                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div>
+                    <div class="set-info"><div class="label">Sets</div><div class="value">3</div></div></div>
                     <div class="set-info"><div class="label">Reps</div><div class="value">12-15</div></div>
                     <div class="set-info"><div class="label">Rest</div><div class="value">60s</div></div>
                 </div>
